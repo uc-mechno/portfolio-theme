@@ -1,0 +1,94 @@
+{
+  /** デフォルトのフォーマッタの設定 */
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.formatOnSave": true, // htmlファイルは保存時にフォーマットする
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // prettierでフォーマット
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true, // scssファイルは保存時にフォーマットする
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // prettierでフォーマット
+  },
+  "[css]": {
+    "editor.formatOnSave": false // cssファイルは保存時にフォーマットしない
+  },
+  "[scss]": {
+    "editor.formatOnSave": false // scssファイルは保存時にフォーマットしない
+  },
+  "[php]": {
+    "editor.formatOnSave": true, // phpファイルは保存時にフォーマットする
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client" // intelephense
+  },
+  "[json]": {
+    "editor.formatOnSave": true, // jsonファイルは保存時にフォーマットする
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // prettierでフォーマット
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false // markdownファイルは保存時にフォーマットしない
+  },
+
+  /** prettier */
+  "prettier.ignorePath": "../.prettierignore", // 除外ファイルのパス
+
+  /** EMMET */
+  "emmet.includeLanguages": {
+    "ejs": "html", // .ejsを.htmlとして扱う
+    "nunjucks": "html" // .nunjucksを.htmlとして扱う
+  },
+
+  /** Autoprefixer */
+  "autoprefixer.options": {
+    "browsers": ["last 2 versions", "not dead", "not IE 11"]
+  },
+
+  /** CSSComb */
+  "csscomb.formatOnSave": true, //保存時にフォーマットするかどうか
+  "csscomb.ignoreFilesOnSave": [
+    //除外ファイルの設定
+    "**/node_modules/**" // node_modules以下を除外
+  ],
+  "csscomb.syntaxAssociations": {
+    "postcss": "scss" // scssに対応
+  },
+  "csscomb.preset": "./.vscode/csscomb.json", //設定ファイルの指定
+  /** Code Spell Checker */
+  "cSpell.ignorePaths": [
+    "**/package.json", // package.jsonを除外
+    "**/package-lock.json", // package-lock.jsonを除外
+    "**/yarn.lock", // yarn.lockを除外
+    "**/node_modules/**", // node_modules以下を除外
+    "**/webpack.config.js", // webpack.config.jsを除外
+    "**/.vscode/", // .vscode以下を除外
+    "**/settings.json", // settings.jsonを除外
+    "**/gulpfile.js" // gulpfile.jsを除外
+  ],
+
+  /** livePreview */
+  "livePreview.autoRefreshPreview": "On Changes to Saved Files", //ファイルを保存したときにプレビューを自動的に更新
+  "livePreview.debugOnExternalPreview": false, //外部のプレビューウィンドウでタスクを実行するかどうか
+  "livePreview.openPreviewTarget": "External Browser", //外部プレビュー優先
+  "livePreview.tasks.runTaskWithExternalPreview": false, //外部のプレビューウィンドウでデバッグを有効にするかどうかうか
+  "livePreview.hostIP": "192.168.1.25", //ローカルIPを使用する
+
+  /** Live Server */
+  "liveServer.settings.donotShowInfoMsg": true, //起動時の情報メッセージを表示しない
+  "liveServer.settings.donotVerifyTags": true, //タグの検証をしない
+  "liveServer.settings.useLocalIp": true, //ローカルIPを使用する
+
+  /** Live Sass Compiler */
+  "liveSassCompile.settings.autoprefix": ["last 2 versions", "not dead", "not IE 11"], //のAutoprefixer設定
+  "liveSassCompile.settings.excludeList": [
+    //除外リスト
+    "/**/node_modules/**", // node_modulesファイルを除外
+    "/.vscode/**" // .vscodeファイルを除外
+  ],
+  "liveSassCompile.settings.generateMap": true, //mapファイルを出すか（true）
+  "liveSassCompile.settings.formats": [
+    //出力の設定
+    {
+      "format": "expanded", // フォーマットルール
+      "extensionName": ".css", // コンパイルされたファイルの拡張子
+      "savePath": "/portfolio-basic-child/assets/css" // 保存場所のパス
+    }
+  ]
+}

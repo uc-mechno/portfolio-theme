@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS
+----------------------------------------------------------------
+
+# COMMON
+  ## POST TITLE
+  ## ARTICLE BOTTOM
+# PAGE
+  ## PRIVATE
+    ### mainContent
+    ### articleFoot
+  ## LOGOUT
+# WIDGET
+
+*/
+
+/*-------------------------------------------------------------
+# COMMON
+-------------------------------------------------------------*/
+
+/*
+## POST TITLE
+-------------------------------------------------------------*/
+.private-template-default.single-private .c-postTitle .c-postTitle__ttl {
+  display: none;
+}
+
+/*
+## ARTICLE BOTTOM
+-------------------------------------------------------------*/
+.private-template-default.single-private .l-articleBottom .p-postList.-type-card .p-postList__title > div {
+  display: none;
+}
+
+/*-------------------------------------------------------------
+# PAGE
+-------------------------------------------------------------*/
+/*
+## PRIVATE
+-------------------------------------------------------------*/
+.page-id-3355 .p-postList .p-postList__title > div {
+  color: #deaa52;
+  font-size: var(--child-font-size-lv2);
+  font-weight: var( --child-font-weight-lv6);
+  margin-top: .5em;
+}
+
+/*
+### mainContent
+-------------------------------------------------------------*/
+.private-template-default.single-private .l-mainContent .l-mainContent__inner > .post_content {
+  margin-top: 0;
+}
+
+.private-template-default.single-private .l-content {
+  padding-top: 0;
+}
+
+/*
+### articleFoot
+-------------------------------------------------------------*/
+.single-private .p-articleFoot {
+  display: none;
+}
+
+/*
+## LOGOUT
+-------------------------------------------------------------*/
+.page-id-3694 .post_content > p + a {
+  background-color: #f09f4d;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.15);
+  color: #f7f5f3;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: var(--child-font-size-lv3);
+  font-weight: 500;
+  height: 2.963em;
+  line-height: 2.963em;
+  margin-inline: auto;
+  margin-top: 2.5em !important;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+  width: 14.815em;
+}
+
+.page-id-3694 .post_content > p + a:hover {
+  background-color: #eca761;
+  transition: all .3s ease;
+}
+
+/*-------------------------------------------------------------
+# WIDGET
+-------------------------------------------------------------*/
+.page-id-3355 .w-beforeFooter,
+.single-private .w-beforeFooter,
+.page-id-3694 .w-beforeFooter {
+  display: none;
+}
