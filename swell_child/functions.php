@@ -257,7 +257,7 @@ add_action('wp_body_open', 'my_body_open2');
 function redirectFunc()
 {
   $url = $_SERVER['REQUEST_URI'];
-  $hostname = 'https://yushiishiguro.com/';
+  $hostname = 'ここにURL';
 
   if (strpos($url, 'logout') || strpos($url, 'private')) {
     if (!is_user_logged_in()) {
