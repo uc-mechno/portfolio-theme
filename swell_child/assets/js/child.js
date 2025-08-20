@@ -1,9 +1,9 @@
 /**
  * グローバル定数
  */
-const SITE_URL = 'https://yushiishiguro.com';
+const SITE_URL = 'ここにRL名';
 const CURRENT_URL = window.location.href;
-const SITE_NAME = 'YUSHI ISHIGURO PORTFOLIO SITE';
+const SITE_NAME = 'ここにサイト名';
 const WP_PATH = 'wp/wp-content/themes/';
 const THEMES_PATH = 'swell_child/';
 
